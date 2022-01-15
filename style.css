@@ -1,0 +1,116 @@
+@media screen and (max-width: 600px) {
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: fit-content;
+  height: fit-content;
+  margin: 1rem auto;
+  padding: 0;
+  background-color: rgb(26, 120, 243);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  max-width: 20%;
+}
+
+img:hover {
+    animation: shake .5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.image {
+  flex-basis: 40%;
+}
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: min(80vw, 80vh);
+  height: min(80vw, 80vh);
+  border: 0.5rem solid grey;
+}
+
+.grid-items {
+  border: 0.1rem solid gray;
+  font-size: 2rem;
+  background-color: orangered;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box8,
+#box9,
+#box10,
+#box11 {
+  border-bottom: 0.5rem solid grey;
+}
+
+#box3,
+#box7,
+#box10,
+#box11,
+#box12,
+#box15 {
+  border-left: 0.5rem solid grey;
+}
+
+.prompt {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.answer {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+}
+
+.special {
+  border: none;
+  font-size: 2rem;
+}
+
+@media (min-width: 475px) {
+  html {
+    font-size: 16px;
+  }
+}
